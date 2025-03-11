@@ -8,7 +8,13 @@ spring:
     jpa:
         hibernate:
             ddl-auto: update # create-drop, create, update, validate, none
-        show-sql: true
+        show-sql: false
         properties:
           hibernate:
               dialect: org.hibernate.dialect.MySQL8Dialect
+    web:
+        resources:
+            static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+jwtSecret: daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb
+jwtExpirationMs: 86400000
