@@ -21,6 +21,8 @@ spring:
             host: localhost
             port: 6379
             timeout: 3600000
+api:
+    prefix: /api/v1
 
 jwtSecret: daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb
 jwtExpirationMs: 86400000
