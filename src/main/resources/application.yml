@@ -7,7 +7,7 @@ spring:
         password: 123456
     jpa:
         hibernate:
-            ddl-auto: update # create-drop, create, update, validate, none
+            ddl-auto: none # create-drop, create, update, validate, none
         show-sql: false
         properties:
           hibernate:
@@ -24,5 +24,9 @@ spring:
 api:
     prefix: /api/v1
 
+file:
+    upload-dir: upload
+
 jwtSecret: daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb
 jwtExpirationMs: 86400000
+
