@@ -1,4 +1,5 @@
 spring:
+
     application:
         name: food-delivery-back-end
     datasource:
@@ -19,14 +20,21 @@ spring:
     data:
         redis:
             host: 127.0.0.1
-            port: 6379
+            port: 16380
+            password: fooddelivery@2024
             timeout: 6000
+            lettuce:
+                pool:
+                    max-active: 8
+                    max-idle: 8
+                    min-idle: 0
+                    max-wait: -1ms
 api:
     prefix: /api/v1
-
 file:
     upload-dir: upload
 
 jwtSecret: daf66e01593f61a15b857cf433aae03a005812b31234e149036bcc8dee755dbb
-jwtExpirationMs: 86400000
-
+jwtExpirationMs: 18000000
+server:
+    port: 8088
