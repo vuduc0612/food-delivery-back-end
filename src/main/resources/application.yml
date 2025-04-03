@@ -19,9 +19,9 @@ spring:
 
     data:
         redis:
-            host: 127.0.0.1
-            port: 16380
-            password: fooddelivery@2024
+            host: redis-16781.c124.us-central1-1.gce.redns.redis-cloud.com
+            port: 16781
+            password: MSKeGbT7EBM59Fow42xFP1Frzu0eLWRF
             timeout: 6000
             lettuce:
                 pool:
